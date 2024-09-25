@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Viajes Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Viajes Global</h1>
+
+    <!-- Formulario para crear y editar paquetes turísticos -->
+    <h2>Crear/Editar Paquete Turístico</h2>
+    <form id="formPaquete">
+        <input type="hidden" id="paqueteId" name="paqueteId">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea><br><br>
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required><br><br>
+        <label for="actividades">Actividades:</label>
+        <textarea id="actividades" name="actividades" required></textarea><br><br>
+        <button type="submit">Guardar Paquete</button>
+    </form>
+
+    <!-- Mostrar paquetes turísticos guardados -->
+    <h2>Paquetes Turísticos</h2>
+    <div id="paquetesList"></div>
+
+    <!-- Formulario para reservar vuelos y hoteles -->
+    <h2>Reservar Vuelos y Hoteles</h2>
+    <form id="formReserva">
+        <label for="tipo">Tipo de reserva:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="vuelo">Vuelo</option>
+            <option value="hotel">Hotel</option>
+        </select><br><br>
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" name="destino" required><br><br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+        <button type="submit">Reservar</button>
+    </form>
+
+    <h2>Reservas</h2>
+    <div id="reservasList"></div>
+
+    <!-- Formulario para gestionar clientes -->
+    <h2>Gestión de Clientes</h2>
+    <form id="formCliente">
+        <input type="hidden" id="clienteId" name="clienteId">
+        <label for="nombreCliente">Nombre:</label>
+        <input type="text" id="nombreCliente" name="nombreCliente" required><br><br>
+        <label for="emailCliente">Email:</label>
+        <input type="email" id="emailCliente" name="emailCliente" required><br><br>
+        <button type="submit">Guardar Cliente</button>
+    </form>
+
+    <h2>Clientes</h2>
+    <div id="clientesList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
