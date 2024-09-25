@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+input[type="text"], input[type="number"], input[type="email"], textarea, select, input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para los paquetes y clientes */
+div {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #2980b9;
+    margin-top: 0;
+}
+
+p {
+    color: #34495e;
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Botones de edición */
+button.editar {
+    background-color: #f39c12;
+    margin-right: 10px;
+}
+
+button.editar:hover {
+    background-color: #e67e22;
+}
+
+/* Estilo para separar secciones */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #bdc3c7;
+    margin: 20px 0;
+}
+
+/* Estilos para la lista de elementos */
+#paquetesList, #reservasList, #clientesList {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    #paquetesList, #reservasList, #clientesList {
+        width: 90%;
+    }
+}
